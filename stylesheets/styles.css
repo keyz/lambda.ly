@@ -5,6 +5,7 @@ body {
   font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+  background-color: #2b303b;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -99,6 +100,7 @@ header {
   width:270px;
   float:left;
   position:fixed;
+  display: none;
 }
 
 header ul {
@@ -161,8 +163,9 @@ header ul a strong {
 
 section {
   width:500px;
-  float:right;
   padding-bottom:50px;
+  color: #c0c5ce;
+  font-size: 15px;
 }
 
 small {
@@ -181,6 +184,7 @@ footer {
   float:left;
   position:fixed;
   bottom:50px;
+  display: none;
 }
 
 @media print, screen and (max-width: 960px) {
