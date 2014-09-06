@@ -1,8 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
   background-color: #2b303b;
@@ -165,7 +163,11 @@ section {
   width:500px;
   padding-bottom:50px;
   color: #c0c5ce;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
   font-size: 15px;
+  color: #C0C5CE; 
+  line-height: 20px;
 }
 
 small {
