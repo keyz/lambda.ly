@@ -1,6 +1,6 @@
 lambda.ly
 =========
-A Scheme interpreter in JavaScript.
+A Scheme interpreter in JavaScript. Available at [http://lambda.ly](http://lambda.ly).
 
 ## TODO
 1. Rewrite the `eval` function to apply a substitution model of evaluation.
