@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="description" content="A Scheme interpreter in JavaScript. https://github.com/keyanzhang/lambda.ly">
   <title>lambda.ly</title>
+  <link rel="stylesheet" href="stylesheets/bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:300,700" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <!--[if lt IE 9]>
@@ -28,42 +29,44 @@
   ga('create', 'UA-56298476-1', 'auto');
   ga('send', 'pageview');
   </script>
+  <script type="text/javascript" src="js/bower_components/underscore/underscore-min.js"></script>
+  <script type="text/javascript" src="js/bower_components/codemirror/lib/codemirror.js"></script>
+  <link rel="stylesheet" type="text/css" href="js/bower_components/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="js/bower_components/codemirror/theme/base16-ocean-dark.css">
+  <script type="text/javascript" src="js/bower_components/codemirror/mode/scheme/scheme.js"></script>
+  <script type="text/javascript" src="js/bower_components/codemirror/addon/edit/matchbrackets.js"></script>
+  <script type="text/javascript" src="js/bower_components/codemirror/addon/edit/closebrackets.js"></script>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>lambda.ly</h1>
-      <p></p>
-
-      <p class="view"><a href="https://github.com/keyanzhang/lambda.ly">View the Project on GitHub <small>keyanzhang/lambda.ly</small></a>
-      </p>
-
-
-      <ul>
-        <li><a href="https://github.com/keyanzhang/lambda.ly/zipball/master">Download <strong>ZIP File</strong></a>
-        </li>
-        <li><a href="https://github.com/keyanzhang/lambda.ly/tarball/master">Download <strong>TAR Ball</strong></a>
-        </li>
-        <li><a href="https://github.com/keyanzhang/lambda.ly">View On <strong>GitHub</strong></a>
-        </li>
-      </ul>
-    </header>
-    <section>
-      <p>λ&gt; '<span style="color: #65737E;">(</span>stay tuned.<span style="color: #65737E;">)</span>
-      </p>
-    </section>
-    <footer>
-      <p>This project is maintained by <a href="https://github.com/keyanzhang">keyanzhang</a>
-      </p>
-      <p>
-        <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a>
-        </small>
-      </p>
-    </footer>
+  <a href="https://github.com/keyanzhang/lambda.ly" id="fork-me"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1000;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+  <div class="lambda">
+    <textarea id="definitions"></textarea>
+    <button onclick="runNow()">Run!</button>
+    <button onclick="resetAll()">Reset</button>
+  </div>
+  
+  
+  <div id="output">
+    
   </div>
   <script src="js/scale.fix.js"></script>
-
+  <script type="text/javascript" src="js/lambda.js"></script>
+  <script type="text/javascript" src="js/editor.js"></script>
+  <script type="text/javascript">
+   window.onresize = function() {
+     dontForkMe();
+   }
+   
+   function dontForkMe() {
+     if (window.innerWidth < 800) {
+       document.getElementById('fork-me').style.display = 'none';       
+     }
+     else {
+       document.getElementById('fork-me').style.display = 'inline';
+    }    
+}
+</script>
 </body>
 
 </html>
