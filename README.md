@@ -3,7 +3,7 @@ lambda.ly
 A Scheme interpreter in JavaScript. Available at [http://lambda.ly](http://lambda.ly).
 
 ## TODO
-1. Rewrite the `eval` function to apply a substitution model of evaluation.
+1. Rewrite the `eval` function to apply the substitution model of evaluation.
 2. A hygienic macro system.
 3. Cons cells visualization.
 
