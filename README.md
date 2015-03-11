@@ -4,8 +4,8 @@ A Scheme interpreter in JavaScript. Available at [http://lambda.ly](http://lambd
 
 ## TODO
 1. Rewrite the `eval` function to apply the substitution model of evaluation.
-2. A hygienic macro system.
-3. Cons cells visualization.
+2. Cons cells/evaluation visualization.
+3. A hygienic macro system.
 
 ## Credits
 - [CodeMirror](http://codemirror.net/)
